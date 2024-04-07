@@ -16,12 +16,25 @@ mkdir -p FasterTransformer/build
 cd FasterTransformer/build
 cmake -DSM=80 -DCMAKE_BUILD_TYPE=Release -DBUILD_PYT=ON -DBUILD_MULTI_GPU=ON ..
 make -j
+```
+* Note: Replace `${DATA_PATH}` with path on host.
+* Note: The `xx` of `-DSM=xx` in the scripts above means the compute capability of your GPU. The following table shows the compute capability of common GPUs.
 
+|  GPU  | compute capacity |
+| :---: | :--------------: |
+|  P40  |        60        |
+|  P4   |        61        |
+| V100  |        70        |
+|  T4   |        75        |
+| A100  |        80        |
+|  A30  |        80        |
+|  A10  |        86        |
+
+```
 # Python dependencies
 pip install -r ../examples/pytorch/t5/requirement.txt
 ```
 
-Replace `${DATA_PATH}` with path on host.
 
 ## Prepare models
 
