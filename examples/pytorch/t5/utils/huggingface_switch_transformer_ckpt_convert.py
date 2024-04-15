@@ -189,9 +189,9 @@ def convert_checkpoint(args):
     saved_dir.mkdir(parents=True, exist_ok=True)
 
     if args.encoder_only:
-        model = SwitchTransformersEncoderModel.from_pretrained(args.in_file)
+        model = SwitchTransformersEncoderModel.from_pretrained(args.in_file, resume_download=True)
     else:
-        model = SwitchTransformersForConditionalGeneration.from_pretrained(args.in_file)
+        model = SwitchTransformersForConditionalGeneration.from_pretrained(args.in_file, resume_download=True)
 
     config = configparser.ConfigParser()
 
@@ -218,6 +218,7 @@ def convert_checkpoint(args):
             config[key][val_key] = val_val
 
     config["structure"]["t5_with_moe"] = "1"
+    config["decoder"]["decoder_start_token_id"] = "0"
     config["structure"]["moe_layers_in_encoder"] = str(list(range(1, int(config["encoder"]["num_layers"]), 2)))
     config["structure"]["moe_layers_in_decoder"] = str(list(range(1, int(config["decoder"]["num_layers"]), 2)))
 

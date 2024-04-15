@@ -280,24 +280,21 @@ def main():
         dfs = {metric: pd.read_csv(f"/workspace/FasterTransformer/performance_data/{gen_csv_name(metric)}") for metric in metrics}
         models = [
             "switch-base-8",
-            # "switch-base-16",
-            # "switch-base-32",
             # "switch-base-64",
             # "switch-base-128",
-            # "switch-base-256",
             # "switch-large-128",
         ]
         batch_sizes = [
             1,
-            2,
-            4,
-            8,
-            16,
+            # 2,
+            # 4,
+            # 8,
+            # 16,
         ]
         methods = [
             "GPU-only",
-            "Pre-gated",
-            "DeepSpeed",
+            # "Pre-gated",
+            # "DeepSpeed",
             # "SE-MoE",
         ]
         rerun_configs = [
