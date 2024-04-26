@@ -1,6 +1,9 @@
 # Pre-gated MoE: An Algorithm-System Co-Design for Fast and Scalable Mixture-of-Expert Inference
 
-This is repository for ISCA'24 AE Pre-gated MoE.
+This is a repository for ISCA'24 AE Pre-gated MoE.
+
+For more details about this project, please refer to our paper published in ISCA-2024,
+"Pre-gated MoE: An Algorithm-System Co-Design for Fast and Scalable Mixture-of-Expert Inference,"
 
 ## ISCA'24 Artifact Evaluation
 
@@ -109,7 +112,9 @@ disk_offloads = [
 ```
 - By default, the data profiling will be conducted for Figures 10, 11, and 12 in the paper.
 
+## Citation
 
+Ranggi Hwang, Jianyu Wei, Shijie Cao, Changho Hwang, Xiaohu Tang, Ting Cao, and Mao Yang, "Pre-gated MoE: An Algorithm-System Co-Design for Fast and Scalable Mixture-of-Expert Inference," The 51st IEEE/ACM International Symposium on Computer Architecture (ISCA-51), Buenos Aires, Argentina, June 2024
 
 ***
 
