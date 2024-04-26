@@ -1,6 +1,6 @@
 # Pre-gated MoE: An Algorithm-System Co-Design for Fast and Scalable Mixture-of-Expert Inference
 
-This is repository for ISCA'24 Pre-gated MoE.
+This is repository for ISCA'24 AE Pre-gated MoE.
 
 ## ISCA'24 Artifact Evaluation
 
