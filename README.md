@@ -3,7 +3,7 @@
 This is a repository for ISCA'24 AE Pre-gated MoE.
 
 For more details about this project, please refer to our paper published in ISCA-2024,
-"Pre-gated MoE: An Algorithm-System Co-Design for Fast and Scalable Mixture-of-Expert Inference,"
+"[Pre-gated MoE: An Algorithm-System Co-Design for Fast and Scalable Mixture-of-Expert Inference](https://arxiv.org/pdf/2308.12066),"
 
 ## Disclaimer
 This open-source project is for proof of concept purposes only and should not be used in production environments. The code has not been officially vetted for security vulnerabilities and provides no guarantees of correctness or security. Users should carefully review the code and conduct their own security assessments before using the software.
